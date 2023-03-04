@@ -3,12 +3,6 @@ import 'package:test/test.dart';
 
 void main() {
   group('Test Chucknorris', () {
-    final chucknorris = Chucknorris();
-
-    // setUp(() {
-    //   // Additional setup goes here.
-    // });
-
     test('getRandomJokes Test', () async {
       expect(await Chucknorris.getRandomJokes(count: 5), hasLength(5));
     });
